@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.here.android.tutorial">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Speed Profile Predictor">
+        <activity android:label="Speed Profile Predictor" android:name=".BasicMapActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service android:enabled="true" android:exported="false" android:name="com.here.services.internal.LocationService" android:process=":remote"/>
+        <meta-data android:name="com.here.android.maps.appid" android:value="L9yoCi6c8HrX8rWIaEI1"/>
+        <meta-data android:name="com.here.android.maps.apptoken" android:value="WLiIFPujeqW2yT--i4sb2Q"/>
+        <meta-data android:name="com.here.android.maps.license.key" android:value="cjYuqLi7c0lsF8JUZORsG2lApu+JtCrpEPo/SIMhV41zEtShhlTJ5kFb3dkAYJ0Fgk8QnYJCkLPRoMWRTedFBmkqHRiqs7/rYhNh3y0RhZgVIzOMbtTt0bcJtaRXBm0umRQfzXE4d8CNjlOz4y3hZyojpDgCO8pTYbzG3on0lMBoBtPU7vx9rdw6BuSSKHsGn/Hg7ButGQ7a9EdGD6fLhEQroBTkdBVu7eh9yDQkXQIkV46Hh9wbjI8/09um4TOj1i/b5rR9vyNMaaF57kCEw8KjfkUo4DYWM6232olNix2p/9b6c7l49o0CgqYQp6X6Pak7XQxVmhRClzsysYKOqvL7RXpvOqFlocsqH6Lfvfgh5+NoCf5x7zosNSB+uXdRyGBF/YKvJdyRW0bApt1tUyL6z3B+Sn4L2lHJjLlBD4UsOUGrFHsf7toeUcT9b6DQd+RU2pibBGkSOyvOh1q+DyoYicuv3XUUf1REqEU0GEt5a8fJga0O0SQwBtg48bSOic98u0k15kooHgs12FD0RxV1T8OMhvVCUGpDzOO/oUOeRi1pSVhseqZNhEOxChs5mJ01pNteeVxLfSusDUEqAZOgqUEGPXvnJ5JZZHzkZDKnWTdbPdzUnWKmSkSj2BMss0ni3OMUgLRPSejS3etUpdOwJl4TLGcRCemZNyTTDB4="/>
+    </application>
+
+</manifest>
