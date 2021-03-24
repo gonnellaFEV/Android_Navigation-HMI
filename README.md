@@ -3,7 +3,8 @@
 TO DO - HandBook
 
 # Software used
-Additional software such as EMU-Short range and CANoe/Sumo
+
+# Hardware used
 
 # LAB set up
 Network connections and architectures (HLD - High Level Design and LLD - Low Level Design)
